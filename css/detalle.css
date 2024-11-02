@@ -1,0 +1,127 @@
+/* detalle de cada libro */
+
+.detail {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    gap: 2em;
+    max-width: 1200px;
+    margin: 5em auto;
+    align-items: center;
+}
+
+.detail__image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.detail__content {
+    flex: 1;
+}
+
+.detail__title {
+    font-size: 2rem;
+    color: var(--title-color);
+    margin: 1em 0;
+}
+
+.detail__author {
+    font-size: 1.25rem;
+    color: var(--text-color);
+    margin: 1em 0;
+}
+
+.detail__stars svg {
+    width: 1.5em;
+    height: 1.5em;
+    fill: var(--first-color);
+    margin: 1em .25em;
+}
+
+.detail__summary {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin: 1em 0;
+    line-height: 1.6;
+}
+
+
+
+
+/* comentarios */
+
+.comments {
+    margin: 6em;
+    padding: 2em;
+    background-color: var(--container-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comments__title {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.comments__list {
+    margin-bottom: 2em;
+}
+
+.comment {
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comment__author {
+    font-weight: bold;
+    color: var(--first-color);
+    margin-bottom: 0.5em;
+}
+
+.comment__text {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.comments__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.comments__label {
+    font-weight: bold;
+    color: var(--title-color);
+}
+
+.comments__input {
+    padding: 1em;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.comments__button, .book__button {
+    padding: 0.75em 1.5em;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comments__button:hover,  .book__button:hover {
+    background-color: hsl(230, 62%, 46%);
+}
